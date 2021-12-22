@@ -1,0 +1,107 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MyClass/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyClass.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyClass.dll": {}
+        }
+      },
+      "MyTestProject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MyClass": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyTestProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyTestProject.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MyClass/1.0.0": {
+      "type": "project",
+      "path": "../MyClass/MyClass.csproj",
+      "msbuildProject": "../MyClass/MyClass.csproj"
+    },
+    "MyTestProject/1.0.0": {
+      "type": "project",
+      "path": "../MyTestProject/MyTestProject.csproj",
+      "msbuildProject": "../MyTestProject/MyTestProject.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "MyClass >= 1.0.0",
+      "MyTestProject >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\flockie\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\flockie\\Desktop\\Testirovanie-master\\lb1\\lb1.csproj",
+      "projectName": "lb1",
+      "projectPath": "C:\\Users\\flockie\\Desktop\\Testirovanie-master\\lb1\\lb1.csproj",
+      "packagesPath": "C:\\Users\\flockie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\flockie\\Desktop\\Testirovanie-master\\lb1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\flockie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\flockie\\Desktop\\Testirovanie-master\\MyClass\\MyClass.csproj": {
+              "projectPath": "C:\\Users\\flockie\\Desktop\\Testirovanie-master\\MyClass\\MyClass.csproj"
+            },
+            "C:\\Users\\flockie\\Desktop\\Testirovanie-master\\MyTestProject\\MyTestProject.csproj": {
+              "projectPath": "C:\\Users\\flockie\\Desktop\\Testirovanie-master\\MyTestProject\\MyTestProject.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
